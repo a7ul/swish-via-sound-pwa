@@ -1,6 +1,6 @@
 # Swish via Sound PWA (User app)
 
-A POC on how to improve the people site to make it easier to search for capabilities inside iZettle.
+A POC on how to make swish payment on iZettle Merchant device using Sound!
 
 **4th October 2018 iZettle Labs Project**
 
