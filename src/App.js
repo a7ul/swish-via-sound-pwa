@@ -3,7 +3,7 @@ import "./App.css";
 import { TextInput } from "./components/TextInput";
 import { Button } from "./components/Button";
 const { Chirp, toAscii } = window.ChirpConnectSDK;
-const CHIRP_KEY = "5442954CfaAE356FCA8Df2E2F";
+const CHIRP_KEY = "CDaBCdc2B82eA2BCFf2f55cfD";
 console.log(CHIRP_KEY);
 class App extends Component {
   state = {
