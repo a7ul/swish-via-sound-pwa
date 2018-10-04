@@ -2,7 +2,7 @@
   height: 50px;
   width: 50px;
   border-radius: 50%;
-  z-index: -1;
+  z-index: 1;
   /* background-color: red; */
   position: relative;
   top: 100px;

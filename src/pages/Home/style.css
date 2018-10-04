@@ -17,6 +17,7 @@
 .reader-image {
   width: 120px;
   margin-left: -10px;
+  z-index: 5;
 }
 
 .reader-image-container {

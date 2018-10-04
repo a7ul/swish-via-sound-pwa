@@ -45,13 +45,13 @@ export class Home extends React.Component {
           </div>
           <CircleWave />
         </div>
-        <Spinner />
         <p className="saving">
           Listening for your purchases
           <span>.</span>
           <span>.</span>
           <span>.</span>
         </p>
+        <Spinner />
       </div>
     );
   }
