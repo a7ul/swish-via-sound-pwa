@@ -26,6 +26,7 @@ export class Result extends React.Component {
     this.sdk.send("SW_SUCCESS");
   };
   onClick = () => {
+    this.sdk.stop();
     this.props.history.push("/home");
   };
   render() {
