@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { TextInput } from "../../components/TextInput";
 import { Button } from "../../components/Button";
-import { Spinner } from "../../components/Spinner";
+
 const { Chirp, toAscii } = window.ChirpConnectSDK;
 const CHIRP_KEY = "5442954CfaAE356FCA8Df2E2F";
 class App extends Component {

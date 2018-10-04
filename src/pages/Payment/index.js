@@ -1,8 +1,8 @@
 import React from "react";
 import { Table } from "../../components/Table";
 import "./style.scss";
+import { filterProducts } from "../../utils/util";
 import swishBtnImg from "../../assets/swish_button.png";
-console.log(swishBtnImg);
 
 const data = [
   { id: 1, name: "APPLE", price: 25 },
@@ -26,22 +26,30 @@ const data = [
 const columns = [
   {
     Header: "Name",
-    accessor: "name" // String-based value accessors!
+    accessor: "name"
   },
   {
     Header: "Price",
     accessor: "price"
   }
 ];
+const onSwishClick = () => {
+  const back_scheme = "https://atulr.com/success";
+  const token = "123123123123123123312";
+  const payLink = `swish://paymentrequest?token=${token}&callbackurl=${back_scheme}`;
+  window.location.replace(`${payLink}`);
+};
 
-export const Payment = () => {
-  const items = [4, 5, 6];
-
+export const Payment = props => {
+  const state = props.location.state || {};
+  const items = state.purchases || [];
+  const filtered = filterProducts(data, items);
   return (
     <div className="payment-container">
-      <Table data={data} columns={columns} />
+      <Table data={filtered} columns={columns} />
       <div className="payment-button-container">
         <div
+          onClick={onSwishClick}
           className="pay-btn"
           style={{ backgroundImage: `url(${swishBtnImg})` }}
         />
