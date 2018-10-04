@@ -1,9 +1,7 @@
 import React, { Component } from "react";
-import "./App2.css";
-import { TextInput } from "./components/TextInput";
-import { Button } from "./components/Button";
-// import { CircleWave } from "./components/CircleWave";
-import { Spinner } from "./components/Spinner";
+import { TextInput } from "../../components/TextInput";
+import { Button } from "../../components/Button";
+import { Spinner } from "../../components/Spinner";
 const { Chirp, toAscii } = window.ChirpConnectSDK;
 const CHIRP_KEY = "5442954CfaAE356FCA8Df2E2F";
 class App extends Component {
@@ -28,8 +26,6 @@ class App extends Component {
         }
       }
     });
-    // this.sdk.setSampleRate(32000);
-    console.log("SAMPLE", this.sdk.getSampleRate());
   };
 
   send = () => {
@@ -47,7 +43,6 @@ class App extends Component {
 
     return (
       <div className="App">
-        <Spinner />
         <div>CHIRP STATUS: {this.state.chirpState || "Not Initialised"}</div>
         <br />
         <hr />
