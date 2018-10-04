@@ -14,6 +14,24 @@ export class Home extends React.Component {
   state = {
     chirpState: null
   };
+  toggleFullScreen = () => {
+    document.fullscreenElement =
+      document.fullscreenElement || document.webkitFullscreenElement;
+    if (!document.fullscreenElement) {
+      var elem = document.getElementById("root");
+      elem.requestFullScreen =
+        elem.requestFullScreen || elem.webkitRequestFullScreen;
+      if (elem.requestFullScreen) {
+        elem.requestFullScreen();
+      }
+    } else {
+      document.exitFullscreen =
+        document.exitFullscreen || document.webkitExitFullscreen;
+      if (document.exitFullscreen) {
+        document.exitFullscreen();
+      }
+    }
+  };
   componentDidMount = async () => {
     this.sdk = await Chirp({
       key: CHIRP_KEY,
@@ -44,7 +62,10 @@ export class Home extends React.Component {
       <div className="home-container">
         <IZCircle />
         <div className="reader-flowing">
-          <div className="reader-image-container">
+          <div
+            onClick={this.toggleFullScreen}
+            className="reader-image-container"
+          >
             <img src={readerImg} alt="reader" className="reader-image" />
           </div>
           <CircleWave />
