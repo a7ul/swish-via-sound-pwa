@@ -23,6 +23,7 @@ export class Home extends React.Component {
       onReceived: data => {
         if (data.length > 0) {
           const text = toAscii(data);
+          console.log("received", text);
           const isValid = checkIfValidPurchases(text);
           if (isValid) {
             this.sdk.stop();
@@ -50,7 +51,7 @@ export class Home extends React.Component {
         </div>
         <Arrow />
         <span className="mic-container">
-          <img src={micImage} className="mic-image" />
+          <img src={micImage} className="mic-image" alt="mic" />
           <p className="listen-text">
             {receiving ? "Receiving items" : "Listening for your purchases"}
           </p>
