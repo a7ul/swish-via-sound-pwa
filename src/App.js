@@ -15,7 +15,7 @@ export const App = () => (
       <Route path="/payment" component={withRouter(Payment)} />
       <Route path="/result" component={withRouter(Result)} />
       <Route path="/demo" component={withRouter(Demo)} />
-      <Route component={withRouter(Home)} />
+      <Route path="/swish-via-sound-pwa" component={withRouter(Home)} />
     </div>
   </Router>
 );
