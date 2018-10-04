@@ -1,47 +1,82 @@
-/* * {
-  overflow: hidden;
-  margin: 0;
+.circle-wave {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  z-index: -1;
+  /* background-color: red; */
+  position: relative;
+  top: 100px;
+  /* left: 300px; */
+  transition: height 0.25s ease, width 0.25s ease;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  transform: scale(2.5);
 }
 
-body {
-  background: #000;
-} */
+.circle-wave:hover {
+  height: 150px;
+  width: 150px;
+}
 
-@keyframes circle-wave {
-  from {
-    transform: scale(0);
+.circle-wave:before,
+.circle-wave:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 50%;
+  border: 1px solid rgb(101, 186, 237);
+}
+
+.circle-wave:before {
+  -webkit-animation: ripple 2s linear infinite;
+  animation: ripple 2s linear infinite;
+}
+.circle-wave:after {
+  -webkit-animation: ripple 2s linear 1s infinite;
+  animation: ripple 2s linear 1s infinite;
+}
+
+.circle-wave:hover:before,
+.circle-wave:hover:after {
+  -webkit-animation: none;
+  animation: none;
+}
+
+@-webkit-keyframes ripple {
+  0% {
+    -webkit-transform: scale(1);
   }
-  to {
-    transform: scale(6);
+  75% {
+    -webkit-transform: scale(1.75);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(2);
+    opacity: 0;
+  }
+}
+
+@keyframes ripple {
+  0% {
+    transform: scale(1);
+  }
+  75% {
+    transform: scale(1.75);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(2);
+    opacity: 0;
   }
 }
 
 .circle-wave-container {
+  display: flex;
   position: absolute;
-  margin: 0 auto;
-  left: 50%;
-  margin-left: -140px;
-}
-
-.circle-wave {
-  margin: 0 auto;
-  width: 300px;
-  height: 300px;
-  border-radius: 50%;
-  position: absolute;
-}
-
-.one {
-  animation: circle-wave 4s infinite linear;
-  border: 1px solid #2b4b89;
-}
-
-.two {
-  animation: circle-wave 3s infinite linear;
-  border: 1px solid #71c48e;
-}
-
-.three {
-  animation: circle-wave 2s infinite linear;
-  border: 1px solid #f5826b;
+  top: 0;
+  justify-content: center;
 }

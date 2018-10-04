@@ -38,9 +38,13 @@ export class Home extends React.Component {
   render() {
     console.log(this.state);
     return (
-      <div>
-        <img src={readerImg} alt="reader" className="reader-image" />
-        <CircleWave />
+      <div className="home-container">
+        <div className="reader-flowing">
+          <div className="reader-image-container">
+            <img src={readerImg} alt="reader" className="reader-image" />
+          </div>
+          <CircleWave />
+        </div>
         <Spinner />
         <p className="saving">
           Listening for your purchases

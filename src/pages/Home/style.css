@@ -1,12 +1,30 @@
+.home-container {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  height: 100vh;
+}
+.reader-flowing {
+  position: relative;
+  height: 250px;
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+}
 .reader-image {
   width: 120px;
-  margin: 0 auto;
-  display: block;
-  position: absolute;
-  /* top: 100px; */
-  left: 50%;
-  margin-left: -50px;
-  /* left: 35%; */
+  margin-left: -10px;
+}
+
+.reader-image-container {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
 }
 
 .saving {
