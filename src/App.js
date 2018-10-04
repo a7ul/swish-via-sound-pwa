@@ -10,10 +10,12 @@ import Demo from "./pages/demo";
 export const App = () => (
   <Router>
     <div>
+      {console.log("Hello")}
       <Route exact path="/" component={withRouter(Home)} />
       <Route path="/payment" component={withRouter(Payment)} />
       <Route path="/result" component={withRouter(Result)} />
       <Route path="/demo" component={withRouter(Demo)} />
+      <Route component={withRouter(Home)} />
     </div>
   </Router>
 );
