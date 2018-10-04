@@ -1,0 +1,38 @@
+.izcircle-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.izcircle {
+  background-color: grey;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  border-radius: 50%;
+}
+.izcircle-1 {
+  top: -60px;
+  background-color: #2b4b89;
+  height: 200px;
+  width: 200px;
+}
+.izcircle-2 {
+  bottom: -50px;
+  width: 150px;
+  height: 150px;
+  z-index: -1;
+  background-color: #71c48e;
+}
+.izcircle-3 {
+  left: -50px;
+  top: 50%;
+  background-color: #a391e0;
+}
+.izcircle-4 {
+  right: -50px;
+  top: 50%;
+  background-color: #f5826b;
+}
