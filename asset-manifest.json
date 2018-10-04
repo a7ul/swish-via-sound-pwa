@@ -1,17 +1,17 @@
 {
   "main.css": "/swish-via-sound-pwa/static/css/main.c59aab95.chunk.css",
-  "main.js": "/swish-via-sound-pwa/static/js/main.b42f6d7c.chunk.js",
-  "main.js.map": "/swish-via-sound-pwa/static/js/main.b42f6d7c.chunk.js.map",
+  "main.js": "/swish-via-sound-pwa/static/js/main.40c96b4d.chunk.js",
+  "main.js.map": "/swish-via-sound-pwa/static/js/main.40c96b4d.chunk.js.map",
   "static/css/1.3958cfc1.chunk.css": "/swish-via-sound-pwa/static/css/1.3958cfc1.chunk.css",
   "static/js/1.8356a58c.chunk.js": "/swish-via-sound-pwa/static/js/1.8356a58c.chunk.js",
   "static/js/1.8356a58c.chunk.js.map": "/swish-via-sound-pwa/static/js/1.8356a58c.chunk.js.map",
   "runtime~main.js": "/swish-via-sound-pwa/static/js/runtime~main.deb94dc4.js",
   "runtime~main.js.map": "/swish-via-sound-pwa/static/js/runtime~main.deb94dc4.js.map",
-  "static/css/1.3958cfc1.chunk.css.map": "/swish-via-sound-pwa/static/css/1.3958cfc1.chunk.css.map",
+  "static/css/main.c59aab95.chunk.css.map": "/swish-via-sound-pwa/static/css/main.c59aab95.chunk.css.map",
   "static/media/izettle-reader.png": "/swish-via-sound-pwa/static/media/izettle-reader.433acb61.png",
   "static/media/swish_button.png": "/swish-via-sound-pwa/static/media/swish_button.396cf05a.png",
-  "static/css/main.c59aab95.chunk.css.map": "/swish-via-sound-pwa/static/css/main.c59aab95.chunk.css.map",
+  "static/css/1.3958cfc1.chunk.css.map": "/swish-via-sound-pwa/static/css/1.3958cfc1.chunk.css.map",
   "index.html": "/swish-via-sound-pwa/index.html",
-  "precache-manifest.786fad548f9fae7fa7fa74a85b52cce6.js": "/swish-via-sound-pwa/precache-manifest.786fad548f9fae7fa7fa74a85b52cce6.js",
+  "precache-manifest.8565e4263fae9d92e8128bd4505e03cd.js": "/swish-via-sound-pwa/precache-manifest.8565e4263fae9d92e8128bd4505e03cd.js",
   "service-worker.js": "/swish-via-sound-pwa/service-worker.js"
 }
