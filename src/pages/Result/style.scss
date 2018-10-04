@@ -1,0 +1,37 @@
+.pay-success-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+}
+
+.pay-success-img {
+  max-width: 50vw;
+  max-height: 50vh;
+  animation: shake2 0.5s linear;
+  animation-iteration-count: infinite;
+}
+
+.pay-success-text {
+  padding: 20px;
+  font-weight: bold;
+}
+
+@keyframes shake2 {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-10deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(10deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
