@@ -1,6 +1,14 @@
 {
-  "main.css": "static/css/main.91e972f0.css",
-  "main.css.map": "static/css/main.91e972f0.css.map",
-  "main.js": "static/js/main.33f9f6a9.js",
-  "main.js.map": "static/js/main.33f9f6a9.js.map"
+  "main.css": "/swish-via-sound-pwa/static/css/main.a23ad878.chunk.css",
+  "main.js": "/swish-via-sound-pwa/static/js/main.f5a433f8.chunk.js",
+  "main.js.map": "/swish-via-sound-pwa/static/js/main.f5a433f8.chunk.js.map",
+  "static/js/1.bc91791f.chunk.js": "/swish-via-sound-pwa/static/js/1.bc91791f.chunk.js",
+  "static/js/1.bc91791f.chunk.js.map": "/swish-via-sound-pwa/static/js/1.bc91791f.chunk.js.map",
+  "runtime~main.js": "/swish-via-sound-pwa/static/js/runtime~main.deb94dc4.js",
+  "runtime~main.js.map": "/swish-via-sound-pwa/static/js/runtime~main.deb94dc4.js.map",
+  "static/media/izettle-reader.png": "/swish-via-sound-pwa/static/media/izettle-reader.433acb61.png",
+  "static/css/main.a23ad878.chunk.css.map": "/swish-via-sound-pwa/static/css/main.a23ad878.chunk.css.map",
+  "index.html": "/swish-via-sound-pwa/index.html",
+  "precache-manifest.e4f0aa65d0be7986e484f4d6148742a7.js": "/swish-via-sound-pwa/precache-manifest.e4f0aa65d0be7986e484f4d6148742a7.js",
+  "service-worker.js": "/swish-via-sound-pwa/service-worker.js"
 }
