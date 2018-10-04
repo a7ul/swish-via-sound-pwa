@@ -12,15 +12,15 @@ self.__precacheManifest = [
     "url": "/swish-via-sound-pwa/static/js/runtime~main.deb94dc4.js"
   },
   {
-    "revision": "2a9d3e45b0f83c849ea0",
-    "url": "/swish-via-sound-pwa/static/js/main.2a9d3e45.chunk.js"
+    "revision": "858992c24f127ced660a",
+    "url": "/swish-via-sound-pwa/static/js/main.858992c2.chunk.js"
   },
   {
     "revision": "8356a58cd39901d10ced",
     "url": "/swish-via-sound-pwa/static/js/1.8356a58c.chunk.js"
   },
   {
-    "revision": "2a9d3e45b0f83c849ea0",
+    "revision": "858992c24f127ced660a",
     "url": "/swish-via-sound-pwa/static/css/main.c59aab95.chunk.css"
   },
   {
@@ -28,7 +28,7 @@ self.__precacheManifest = [
     "url": "/swish-via-sound-pwa/static/css/1.3958cfc1.chunk.css"
   },
   {
-    "revision": "f9e9716f3024230fedeead7c216571e8",
+    "revision": "ebc42dac80c1d4547a3503073cc9d7dc",
     "url": "/swish-via-sound-pwa/index.html"
   }
 ];

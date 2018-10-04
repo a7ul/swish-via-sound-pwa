@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.2/workbox-sw.js");
 
 importScripts(
-  "/swish-via-sound-pwa/precache-manifest.0a1a1bfe3d9ce002e93c6f711af8de00.js"
+  "/swish-via-sound-pwa/precache-manifest.ef21de5ada9e45107c8a425ef317ea61.js"
 );
 
 workbox.clientsClaim();
