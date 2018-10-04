@@ -34,7 +34,7 @@ const columns = [
   }
 ];
 const onSwishClick = () => {
-  const back_scheme = "https://atulr.com/success";
+  const back_scheme = "https://swish.atulr.com/#/result";
   const token = "123123123123123123312";
   const payLink = `swish://paymentrequest?token=${token}&callbackurl=${back_scheme}`;
   window.location.replace(`${payLink}`);
