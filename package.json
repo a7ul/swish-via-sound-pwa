@@ -12,7 +12,7 @@
     "react-scripts": "^2.0.4",
     "react-table": "^6.8.6"
   },
-  "homepage": "https://swish.atulr.com/",
+  "homepage": "http://swish.atulr.com/",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
