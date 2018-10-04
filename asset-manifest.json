@@ -1,17 +1,17 @@
 {
   "main.css": "/static/css/main.83a96f6e.chunk.css",
-  "main.js": "/static/js/main.b9001c2a.chunk.js",
-  "main.js.map": "/static/js/main.b9001c2a.chunk.js.map",
+  "main.js": "/static/js/main.d43a8ab1.chunk.js",
+  "main.js.map": "/static/js/main.d43a8ab1.chunk.js.map",
   "static/css/1.3958cfc1.chunk.css": "/static/css/1.3958cfc1.chunk.css",
   "static/js/1.8356a58c.chunk.js": "/static/js/1.8356a58c.chunk.js",
   "static/js/1.8356a58c.chunk.js.map": "/static/js/1.8356a58c.chunk.js.map",
   "runtime~main.js": "/static/js/runtime~main.229c360f.js",
   "runtime~main.js.map": "/static/js/runtime~main.229c360f.js.map",
-  "static/css/main.83a96f6e.chunk.css.map": "/static/css/main.83a96f6e.chunk.css.map",
+  "static/css/1.3958cfc1.chunk.css.map": "/static/css/1.3958cfc1.chunk.css.map",
   "static/media/izettle-reader.png": "/static/media/izettle-reader.433acb61.png",
   "static/media/swish_button.png": "/static/media/swish_button.396cf05a.png",
-  "static/css/1.3958cfc1.chunk.css.map": "/static/css/1.3958cfc1.chunk.css.map",
+  "static/css/main.83a96f6e.chunk.css.map": "/static/css/main.83a96f6e.chunk.css.map",
   "index.html": "/index.html",
-  "precache-manifest.ea32c9b402a6c76990bec97e4b51f384.js": "/precache-manifest.ea32c9b402a6c76990bec97e4b51f384.js",
+  "precache-manifest.d6fe39993e62a66e718e4ff26216f73f.js": "/precache-manifest.d6fe39993e62a66e718e4ff26216f73f.js",
   "service-worker.js": "/service-worker.js"
 }
