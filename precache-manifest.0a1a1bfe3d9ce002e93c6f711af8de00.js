@@ -12,23 +12,23 @@ self.__precacheManifest = [
     "url": "/swish-via-sound-pwa/static/js/runtime~main.deb94dc4.js"
   },
   {
-    "revision": "7f2fac9541e75ce58561",
-    "url": "/swish-via-sound-pwa/static/js/main.7f2fac95.chunk.js"
+    "revision": "2a9d3e45b0f83c849ea0",
+    "url": "/swish-via-sound-pwa/static/js/main.2a9d3e45.chunk.js"
   },
   {
-    "revision": "95e6855a609750dca6fc",
-    "url": "/swish-via-sound-pwa/static/js/1.95e6855a.chunk.js"
+    "revision": "8356a58cd39901d10ced",
+    "url": "/swish-via-sound-pwa/static/js/1.8356a58c.chunk.js"
   },
   {
-    "revision": "7f2fac9541e75ce58561",
-    "url": "/swish-via-sound-pwa/static/css/main.7df881e4.chunk.css"
+    "revision": "2a9d3e45b0f83c849ea0",
+    "url": "/swish-via-sound-pwa/static/css/main.c59aab95.chunk.css"
   },
   {
-    "revision": "95e6855a609750dca6fc",
-    "url": "/swish-via-sound-pwa/static/css/1.25af1554.chunk.css"
+    "revision": "8356a58cd39901d10ced",
+    "url": "/swish-via-sound-pwa/static/css/1.3958cfc1.chunk.css"
   },
   {
-    "revision": "a77b51a3ef539d2a4492d5c44aaa6ac7",
+    "revision": "f9e9716f3024230fedeead7c216571e8",
     "url": "/swish-via-sound-pwa/index.html"
   }
 ];
