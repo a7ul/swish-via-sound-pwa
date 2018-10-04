@@ -12,6 +12,7 @@ export const App = () => (
     <div>
       {console.log("Hello")}
       <Route exact path="/" component={withRouter(Home)} />
+      <Route path="/home" component={withRouter(Home)} />
       <Route path="/payment" component={withRouter(Payment)} />
       <Route path="/result" component={withRouter(Result)} />
       <Route path="/demo" component={withRouter(Demo)} />
