@@ -1,69 +1,29 @@
-import React, { Component } from "react";
-import "./App.css";
-import { TextInput } from "./components/TextInput";
-import { Button } from "./components/Button";
-const { Chirp, toAscii } = window.ChirpConnectSDK;
-const CHIRP_KEY = "CDaBCdc2B82eA2BCFf2f55cfD";
-console.log(CHIRP_KEY);
-class App extends Component {
-  state = {
-    text: "",
-    chirpState: null,
-    receivedText: null
-  };
+import React from "react";
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { Home } from "./pages/Home";
+import { Payment } from "./pages/Payment";
+import { Result } from "./pages/Result";
 
-  componentDidMount = async () => {
-    this.sdk = await Chirp({
-      key: CHIRP_KEY,
-      onStateChanged: (previous, current) => {
-        this.setState(() => ({ chirpState: current }));
-      },
-      onReceived: data => {
-        if (data.length > 0) {
-          const text = toAscii(data);
-          return this.setState(() => ({ receivedText: text }));
-        } else {
-          this.setState(() => ({ receivedText: null }));
-        }
-      }
-    });
-  };
+export const App = () => (
+  <Router>
+    <div>
+      {/* <ul>
+        <li>
+          <Link to="/">App</Link>
+        </li>
+        <li>
+          <Link to="/payment">Payment</Link>
+        </li>
+        <li>
+          <Link to="/result">Result</Link>
+        </li>
+      </ul>
 
-  send = () => {
-    if (!this.sdk) {
-      return console.error("sdk not yet initialised.. please wait");
-    }
-    this.sdk.send(this.state.text);
-  };
+      <hr /> */}
 
-  onTextChange = text => {
-    this.setState(() => ({ text }));
-  };
-  render() {
-    console.log(this.state);
-    return (
-      <div className="App">
-        <div>CHIRP STATUS: {this.state.chirpState || "Not Initialised"}</div>
-        <br />
-        <hr />
-        <br />
-
-        <div>
-          Enter text to send:
-          <TextInput onChange={this.onTextChange} value={this.state.text} />
-        </div>
-        <div>
-          <Button onClick={this.send}>Send</Button>
-        </div>
-
-        <br />
-        <hr />
-        <br />
-        <i>(Send data from another tab to receive here)</i>
-        <div>Received Text: {this.state.receivedText || "Listening...."}</div>
-      </div>
-    );
-  }
-}
-
-export default App;
+      <Route exact path="/" component={Home} />
+      <Route path="/payment" component={Payment} />
+      <Route path="/result" component={Result} />
+    </div>
+  </Router>
+);
