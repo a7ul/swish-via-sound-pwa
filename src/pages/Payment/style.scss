@@ -1,0 +1,38 @@
+.payment-button-container {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+.payment-container {
+  display: flex;
+  flex-direction: column;
+  height: 80%;
+}
+
+.ReactTable {
+  height: 80vh;
+}
+
+.pay-btn {
+  padding: 10px;
+  text-align: center;
+  height: 50px;
+  width: 140px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  border: 1px solid;
+  border-radius: 40px;
+  box-sizing: border-box;
+  box-shadow: 3px 5px 18px -6px #9e9e98;
+  cursor: pointer;
+}
+
+.pay-btn:active {
+  width: 145px;
+}
+
+.pay-btn:focus {
+  width: 145px;
+}
