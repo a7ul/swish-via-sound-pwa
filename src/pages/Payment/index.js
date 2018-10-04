@@ -30,7 +30,9 @@ const columns = [
   },
   {
     Header: "Price",
-    accessor: "price"
+    id: "price", // Required because our accessor is not a string
+    // accessor: "price",
+    accessor: d => `${d.price} SEK`
   }
 ];
 const onSwishClick = () => {
@@ -39,20 +41,33 @@ const onSwishClick = () => {
   const payLink = `swish://paymentrequest?token=${token}&callbackurl=${back_scheme}`;
   window.location.replace(`${payLink}`);
 };
+const getTotal = items => {
+  let total = 0;
+  items.forEach(item => {
+    total += item.price;
+  });
+  return total || 0;
+};
 
 export const Payment = props => {
   const state = props.location.state || {};
-  const items = state.purchases || [];
+  const items = state.purchases || [1, 2, 3];
   const filtered = filterProducts(data, items);
   return (
     <div className="payment-container">
-      <Table data={filtered} columns={columns} />
-      <div className="payment-button-container">
-        <div
-          onClick={onSwishClick}
-          className="pay-btn"
-          style={{ backgroundImage: `url(${swishBtnImg})` }}
-        />
+      <div className="p-wrapper">
+        <Table data={filtered} columns={columns} />
+        <div className="payment-button-container">
+          <div
+            onClick={onSwishClick}
+            className="pay-btn"
+            style={{ backgroundImage: `url(${swishBtnImg})` }}
+          />
+          <div className="payment-total-text">
+            <p className="sub-head-total">Total amount</p>
+            {getTotal(filtered)} SEK
+          </div>
+        </div>
       </div>
     </div>
   );
