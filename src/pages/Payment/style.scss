@@ -21,7 +21,7 @@
 }
 
 .ReactTable {
-  height: 70vh;
+  height: 60vh;
   border-radius: 8px;
   overflow: hidden;
 }
@@ -29,8 +29,8 @@
   padding: 10px 10px 30px 10px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  flex: 1;
+  justify-content: space-evenly;
+  flex: 1 1;
 }
 
 .pay-btn {
